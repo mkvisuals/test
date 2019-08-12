@@ -1,5 +1,13 @@
 <template>
-
+    <div>
+        <nav>
+            <router-link to="/">domu</router-link>
+            <router-link to="/hovno">Go to hovno</router-link>
+            <router-link to="/sracka">Go to sracka</router-link>
+        </nav>
+        <!-- tady se zobrazi content těch stránek-->
+        <router-view></router-view>
+    </div>
 </template>
 
 <script>
@@ -8,16 +16,12 @@
     export default {
         name: 'App',
         data: function () {
-            return {
-            }
+            return {}
         },
-        computed: {
-        },
-        watch: {
-        },
+        computed: {},
+        watch: {},
         mounted() {
         },
-        methods: {
-        }
+        methods: {}
     }
 </script>
